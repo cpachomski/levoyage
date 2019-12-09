@@ -1,0 +1,7 @@
+backend:
+  name: levoyage-git
+  branch: test
+media_folder: static/assets
+public_folder: assets
+collections:
+  - name:
