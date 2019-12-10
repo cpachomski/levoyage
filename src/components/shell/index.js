@@ -16,7 +16,7 @@ function useSiteMetadata() {
     `
   )
 
-  return site.useSiteMetadata
+  return site.siteMetadata
 }
 
 const Shell = ({ children }) => {

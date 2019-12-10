@@ -46,8 +46,13 @@ collections:
               default: "index-page",
             }
           - { label: Title, name: title, widget: string }
-          - { label: "Hero Image", name: image, widget: image }
-          - { label: "Hero Video Url", name: videoUrl, widget: string }
+          - { label: "Hero Image", name: image, widget: image, required: false }
+          - {
+              label: "Hero Video Url",
+              name: videoUrl,
+              widget: string,
+              required: false,
+            }
           - { label: Heading, name: heading, widget: string }
           - { label: Subheading, name: subheading, widget: string }
           - { label: Description, name: description, widget: string }
