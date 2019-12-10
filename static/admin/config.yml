@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: cpachomski/levoyage
-  base_url: https://5def339739defa000782ca99--quizzical-tesla-84409f.netlify.com/
+  base_url: https://quizzical-tesla-84409f.netlify.com/
   commit_messages:
     create: 'Create {{collection}} "{{slug}}"'
     update: 'Update {{collection}} "{{slug}}"'
