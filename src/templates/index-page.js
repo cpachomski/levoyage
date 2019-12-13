@@ -92,7 +92,7 @@ export const IndexPageTemplate = ({
               },
             }}
             backgroundColor="#a60202"
-            fontSize={30}
+            fontSize={[16, 30]}
             fontFamily="sans-serif"
             py={3}
             px={4}
