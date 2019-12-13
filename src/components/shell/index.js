@@ -1,5 +1,8 @@
 import React from "react"
 import { Helmet } from "react-helmet"
+import { ThemeProvider } from "emotion-theming"
+import theme from "@rebass/preset"
+import "./reset.css"
 
 import { graphql as q, useStaticQuery } from "gatsby"
 
@@ -10,7 +13,6 @@ function useSiteMetadata() {
         site {
           siteMetadata {
             siteTitle 
-            siteDescription
           }
         }
       }
@@ -21,16 +23,19 @@ function useSiteMetadata() {
 }
 
 const Shell = ({ children }) => {
-  const { siteTitle, siteDescription } = useSiteMetadata()
+  const { siteTitle } = useSiteMetadata()
   return (
-    <div>
+    <ThemeProvider theme={theme}>
       <Helmet>
+        <title>{siteTitle}</title>
+        <link
+          href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Cinzel|Marck+Script|Petit+Formal+Script&display=swap"
+          rel="stylesheet"
+        />
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
       </Helmet>
-      <span>{siteTitle}</span>
-      <p>{siteDescription}</p>
       {children}
-    </div>
+    </ThemeProvider>
   )
 }
 

@@ -57,3 +57,9 @@ collections:
           - { label: Heading, name: heading, widget: string }
           - { label: Subheading, name: subheading, widget: string }
           - { label: Description, name: description, widget: string }
+          - {
+              label: "Crew Members",
+              name: crewMembers,
+              widget: list,
+              field: { role: text, name: text, website: text },
+            }
