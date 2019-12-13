@@ -45,7 +45,7 @@ export const IndexPageTemplate = ({
         height="100vh"
         px={[15, 25, 35]}
         py={[15, 25, 35]}
-        minWidth={[340, 768, 992, 1120]}
+        minWidth={[340, 768, 768, 1020]}
         margin="0 auto"
         justifyContent="space-between"
       >
@@ -82,7 +82,7 @@ export const IndexPageTemplate = ({
       >
         <CrewList items={crewMembers} />
         <Link
-          mb={50}
+          my={50}
           href="https://docs.google.com/forms/d/e/1FAIpQLSchzcsfwOfoeumL1EVjaq2k0Nugtr5BE7WHrn2f8dnPFsIptQ/viewform?usp=sf_link"
         >
           <Button
@@ -118,7 +118,7 @@ const CrewList = ({ items }) => {
   return (
     <Flex
       px={[15, 25, 35]}
-      py={[15, 25, 35]}
+      mt={[15, 25, 35]}
       minWidth={[340, 768, 992, 1120]}
       margin="0 auto"
       flexDirection="column"
@@ -191,6 +191,10 @@ export const pageQuery = graphql`
         heading
         subheading
         description
+        crewMembers {
+          name
+          role
+        }
       }
     }
   }
