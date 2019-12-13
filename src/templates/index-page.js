@@ -113,7 +113,7 @@ const CrewList = ({ items }) => {
     <Flex
       px={[15, 25, 35]}
       mt={[15, 25, 35]}
-      minWidth={[340, 768, 992, 1120]}
+      minWidth={[340, 768, 768, 1020]}
       margin="0 auto"
       flexDirection="column"
     >
