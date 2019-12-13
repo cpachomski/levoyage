@@ -160,14 +160,8 @@ const IndexPage = ({ data }) => {
   return (
     <Shell>
       <IndexPageTemplate
-        image={frontmatter.image}
         title={frontmatter.title}
-        heading={frontmatter.heading}
-        subheading={frontmatter.subheading}
-        mainpitch={frontmatter.mainpitch}
-        description={frontmatter.description}
         crewMembers={frontmatter.crewMembers}
-        intro={frontmatter.intro}
       />
     </Shell>
   )
@@ -188,9 +182,6 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         title
-        heading
-        subheading
-        description
         crewMembers {
           name
           role
