@@ -6,13 +6,7 @@ import { IoIosArrowRoundDown } from "react-icons/io"
 
 import Shell from "../components/shell"
 
-export const IndexPageTemplate = ({
-  title,
-  heading,
-  subheading,
-  description,
-  crewMembers,
-}) => {
+export const IndexPageTemplate = ({ title, crewMembers }) => {
   return (
     <>
       <Flex>
